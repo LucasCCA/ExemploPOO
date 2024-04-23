@@ -23,27 +23,45 @@
 
 #region HerancaEPolimorfismo
 
-Aluno aluno = new Aluno()
-{
-    Nome = "Lucas",
-    Idade = 21,
-    Email = "email@gmail.com",
-    Nota = 10
-};
+// Aluno aluno = new Aluno()
+// {
+//     Nome = "Lucas",
+//     Idade = 21,
+//     Email = "email@gmail.com",
+//     Nota = 10
+// };
 
-aluno.Apresentar();
+// aluno.Apresentar();
 
-Professor professor = new Professor()
-{
-    Nome = "Eduardo",
-    Idade = 30,
-    Salario = 1000
-};
+// Professor professor = new Professor()
+// {
+//     Nome = "Eduardo",
+//     Idade = 30,
+//     Salario = 1000
+// };
 
-professor.Apresentar();
+// professor.Apresentar();
 
-Calculadora c = new Calculadora();
-Console.WriteLine(c.Somar(1, 2));
-Console.WriteLine(c.Somar(1, 2, 2));
+// Calculadora c = new Calculadora();
+// Console.WriteLine(c.Somar(1, 2));
+// Console.WriteLine(c.Somar(1, 2, 2));
+
+#endregion
+
+#region ClasseAbstrata
+
+// Corrente c = new Corrente();
+// c.Creditar(500);
+// c.ExibirSaldo();
+
+#endregion
+
+#region ConstrutorPorHeranca
+
+Aluno a1 = new Aluno("Lucas");
+Professor p1 = new Professor("Eduardo");
+a1.Apresentar();
+p1.Apresentar();
+Aluno a2 = new Aluno();
 
 #endregion
