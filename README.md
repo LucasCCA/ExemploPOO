@@ -15,7 +15,13 @@
         Polimorfismo
     </li>
     <li>
-        Classes Abstratas
+        Classes e Métodos Abstratos
+    </li>
+    <li>
+        Classes e Métodos Selados
+    </li>
+    <li>
+        Classe Object
     </li>
     <li>
         Interfaces
