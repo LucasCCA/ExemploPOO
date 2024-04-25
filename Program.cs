@@ -1,4 +1,5 @@
-﻿using ExemploPOO.Models;
+﻿using ExemploPOO.Interfaces;
+using ExemploPOO.Models;
 
 #region Abstracao
 
@@ -58,10 +59,25 @@
 
 #region ConstrutorPorHeranca
 
-Aluno a1 = new Aluno("Lucas");
-Professor p1 = new Professor("Eduardo");
-a1.Apresentar();
-p1.Apresentar();
-Aluno a2 = new Aluno();
+// Aluno a1 = new Aluno("Lucas");
+// Professor p1 = new Professor("Eduardo");
+// a1.Apresentar();
+// p1.Apresentar();
+// Aluno a2 = new Aluno();
+
+#endregion
+
+#region ClasseObject
+
+// Computador c = new Computador();
+// Console.WriteLine(c.ToString());
+
+#endregion
+
+#region Interface
+
+ICalculadora c = new Calculadora();
+Console.WriteLine(c.Multiplicar(3, 9));
+Console.WriteLine(c.Dividir(9, 3));
 
 #endregion
